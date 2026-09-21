@@ -39,7 +39,7 @@ export default function Footer() {
               Vinay Bhalerao
             </h3>
             <p className="text-gray-400 max-w-md mx-auto">
-              Full-Stack Developer & AR/VR Enthusiast passionate about creating innovative solutions.
+              Full-Stack Developer & AI Enthusiast passionate about creating innovative solutions.
             </p>
           </div>
 
