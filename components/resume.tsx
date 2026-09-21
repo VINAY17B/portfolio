@@ -7,27 +7,16 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 const experiences = [
   {
-    title: "Web Development Intern",
-    company: "Sofueled",
-    period: "July - August 2024",
+    title: "Trainee Software Engineer",
+    company: "Goa Electronics Limited",
+    period: "October 2025 – Present",
     description:
-      "Enhanced skills in full-stack development and CRUD operations with MySQL. Improved user experience and platform security, boosting efficiency by 30%.",
+      "Building production workflow modules for the Goa Online government services portal, combining React.js, Node.js, REST APIs, and PostgreSQL.",
     achievements: [
-      "Developed full-stack web applications with CRUD operations",
-      "Improved platform security and user experience",
-      "Achieved 30% efficiency boost through optimization",
-    ],
-  },
-  {
-    title: "CMS Intern",
-    company: "Pristine Engineering Services",
-    period: "July - August 2024",
-    description:
-      "Developed a professional, responsive website for the company, enhancing online presence and ensuring cross-device compatibility.",
-    achievements: [
-      "Built responsive company website from scratch",
-      "Ensured cross-device and cross-browser compatibility",
-      "Enhanced company's digital presence and user engagement",
+      "Delivered 4+ production-ready IPB and DG Set service modules used daily by citizens and departmental officers",
+      "Engineered dynamic multi-step forms, complex validation, status tracking, and approval workflow screens",
+      "Integrated 10+ REST API endpoints with PostgreSQL-backed services and contributed to UAT and production releases",
+      "Contributed to SonarQube-reviewed codebases and cross-functional delivery with QA, PMs, and government stakeholders",
     ],
   },
 ]
@@ -38,8 +27,8 @@ const education = [
     field: "Honours in Data Science",
     institution: "Goa University",
     period: "2021 - 2025",
-    description: "CGPA: 8.4/10. Focused on full-stack development, data science, and emerging technologies.",
-    gpa: "8.4 CGPA",
+    description: "CGPA: 8.3/10. Honours in Data Science with a focus on software engineering and AI.",
+    gpa: "8.3 CGPA",
   },
   {
     degree: "Higher Secondary School Certificate (HSSC)",
@@ -52,9 +41,9 @@ const education = [
 ]
 
 const certifications = [
-  "Microsoft Azure Application (Great Learning)",
-  "Joy Of Computing Using Python (NPTEL)",
-  "Training and Development, Industry 4.0 and IoT (NPTEL)",
+  "AI Engineer Core Track: LLM Engineering, RAG, QLoRA, Agents — Udemy",
+  "React — The Complete Guide 2025 — Udemy",
+  "PostgreSQL Bootcamp: Beginner to Advanced — Udemy",
 ]
 
 const leadership = [
@@ -84,7 +73,7 @@ export default function Resume() {
       // Create a link element and trigger download
       const link = document.createElement("a")
       link.href = "/resume/vinay-bhalerao.pdf"
-      link.download = "Vinay_Bhalerao_Resume.pdf"
+      link.download = "vinay-bhalerao.pdf"
       link.target = "_blank"
       link.rel = "noopener noreferrer"
 
@@ -94,7 +83,7 @@ export default function Resume() {
       document.body.removeChild(link)
     } catch (error) {
       // Fallback: open in new tab
-      window.open("/resume/vinay-bhalerao.pdf", "_blank")
+      window.open("/resume/Vinay_Bhalerao_Resume.pdf", "_blank")
     }
   }
 

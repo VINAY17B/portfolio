@@ -2,22 +2,21 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
-import { Toaster } from "@/components/ui/toaster"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Vinay Bhalerao - Full-Stack Developer & AR/VR Enthusiast",
+  title: "Vinay Bhalerao - AI Developer & Full-Stack Engineer",
   description:
-    "Portfolio of Vinay Bhalerao, a passionate Full-Stack Developer and AR/VR Enthusiast from India. Specializing in React, Next.js, Unity3D, and innovative web solutions.",
-  keywords: "Vinay Bhalerao, Full-Stack Developer, AR/VR Developer, React, Next.js, Unity3D, Portfolio",
+    "Portfolio of Vinay Bhalerao, an AI Developer and Full-Stack Engineer building RAG systems, LLM applications, and production React, Node.js, and PostgreSQL products.",
+  keywords: "Vinay Bhalerao, AI Developer, Full-Stack Engineer, RAG, LLM, QLoRA, React, Node.js, PostgreSQL, Portfolio",
   authors: [{ name: "Vinay Bhalerao" }],
   openGraph: {
-    title: "Vinay Bhalerao - Full-Stack Developer & AR/VR Enthusiast",
-    description: "Portfolio showcasing innovative web development and AR/VR projects",
+    title: "Vinay Bhalerao - AI Developer & Full-Stack Engineer",
+    description: "Portfolio showcasing AI engineering, RAG systems, LLM projects, and production full-stack development",
     type: "website",
   },
-    generator: 'v0.dev'
+    generator: 'v0.app'
 }
 
 export default function RootLayout({
@@ -27,10 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
-        {children}
-        <Toaster />
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }

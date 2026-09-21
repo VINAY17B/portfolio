@@ -12,63 +12,62 @@ import Image from "next/image"
 const projects = [
   {
     id: 1,
-    title: "NaviSight - AR Indoor Navigation",
+    title: "InsureLLM — Enterprise RAG Chatbot",
     description:
-      "AR-based indoor navigation app built in Unity with ARCore for real-time path guidance via QR code scanning. Won 1st place in Project Competition organized by the Information Technology Department of PCCE.",
-    image: "/images/navisight-ar.jpeg",
-    techStack: ["Unity", "ARCore", "C#", "QR Code Scanning"],
-    githubUrl: "https://github.com/VINAY17B/NaviSight",
+      "Context-aware Q&A assistant for enterprise insurance documents with semantic chunking, dual-query retrieval, automatic query rewriting, and LLM-based reranking.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-aAwVZxlJfmQKl2rPY0Dn4sS6vibNJQ.png",
+    techStack: ["Python", "LiteLLM", "ChromaDB", "Gradio", "Pydantic", "RAG"],
+    githubUrl: "https://github.com/VINAY17B/InsureLLM",
     featured: true,
-    category: "AR/VR",
-    award: "🏆 1st Place Winner",
+    category: "AI/ML",
   },
   {
     id: 2,
-    title: "FitZone – Gym Website",
+    title: "Price Prediction Benchmark",
     description:
-      "Dynamic fitness website featuring exercise listings, user registration/login, and interactive UI. Built using the complete MERN stack for optimal performance and user experience.",
-    image: "/images/fitzone.png",
-    techStack: ["React.js", "Express.js", "MongoDB", "Node.js", "MERN Stack"],
-    githubUrl: "https://github.com/VINAY17B/Fitzone",
+      "End-to-end text-to-price prediction pipeline using 20K+ Amazon listings, LLM-assisted data cleaning, a custom PyTorch DNN, Random Forest, and XGBoost.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-PT303hVB3RT96YFKZz8JuXyDGSqdvb.png",
+    techStack: ["Python", "PyTorch", "Hugging Face", "XGBoost", "scikit-learn", "QLoRA"],
+    githubUrl: "https://github.com/VINAY17B",
+    featured: true,
+    category: "AI/ML",
+  },
+  {
+    id: 3,
+    title: "Goa Online Portal Revamp",
+    description:
+      "Production government services platform with 4+ workflow modules, dynamic multi-step forms, approval flows, status tracking, and 10+ PostgreSQL-backed REST endpoints.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-K4orFLRHSL3VIDdhYWNM96wRtZ3LF3.png",
+    techStack: ["React.js", "Node.js", "PostgreSQL", "REST APIs", "SonarQube"],
+    githubUrl: "https://github.com/VINAY17B",
     featured: true,
     category: "Full-Stack",
   },
   {
-    id: 3,
+    id: 4,
     title: "Othello Game with AI",
     description:
-      "Interactive Othello/Reversi board game with AI powered by Minimax algorithm and alpha-beta pruning. Supports Player vs Player and Player vs AI modes with intelligent move prediction.",
+      "Interactive Othello board game with AI-powered move prediction using Minimax and alpha-beta pruning, supporting both player-versus-player and player-versus-AI modes.",
     image: "/images/othello-game.png",
-    techStack: ["Python", "JavaScript", "HTML/CSS", "Minimax Algorithm", "Alpha-Beta Pruning"],
+    techStack: ["Python", "JavaScript", "Minimax", "Alpha-Beta Pruning"],
     githubUrl: "https://github.com/VINAY17B/Othello_AI",
     featured: false,
     category: "AI/ML",
   },
   {
-    id: 4,
+    id: 5,
     title: "Food Delivery Website",
     description:
-      "Responsive and visually appealing food delivery website with modern animations and transitions. Features user authentication, menu browsing, and cart management functionality.",
+      "Responsive React application with authentication, menu browsing, cart management, and polished interaction design.",
     image: "/images/food-delivery.png",
     techStack: ["React.js", "JavaScript", "CSS", "Responsive Design"],
     githubUrl: "https://github.com/VINAY17B/Food_Delivery_Website",
     featured: false,
     category: "Frontend",
   },
-  {
-    id: 5,
-    title: "Royal Hotel Booking System",
-    description:
-      "Comprehensive hotel management system with MySQL database, optimizing booking and customer management through automated reservation handling and real-time availability tracking.",
-    image: "/images/hilltown-hotel-website-template.jpg",
-    techStack: ["MySQL", "DBMS", "Automated Systems", "Real-time Tracking"],
-    githubUrl: "https://github.com/VINAY17B/Royal_hotelbooking",
-    featured: false,
-    category: "Backend",
-  },
 ]
 
-const categories = ["All", "Full-Stack", "AR/VR", "Frontend", "Backend", "AI/ML"]
+const categories = ["All", "AI/ML", "Full-Stack", "Frontend"]
 
 export default function Projects() {
   const [selectedCategory, setSelectedCategory] = useState("All")
@@ -88,8 +87,7 @@ export default function Projects() {
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">Featured Projects</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Here are some of my recent projects that showcase my skills in full-stack development, AR/VR, AI/ML, and
-            innovative problem-solving.
+            Selected work across RAG systems, applied machine learning, and production full-stack engineering.
           </p>
         </motion.div>
 

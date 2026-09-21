@@ -1,29 +1,29 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Code, Smartphone, Database, Globe, Zap, Users } from "lucide-react"
+import { Code, Brain, Database, Globe, Zap, Users } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
 const skills = [
   {
-    category: "Programming",
-    icon: Code,
-    technologies: ["C++", "Python", "JavaScript", "HTML5", "CSS3"],
+    category: "AI & LLM Engineering",
+    icon: Brain,
+    technologies: ["Python", "RAG", "QLoRA / PEFT", "Hugging Face", "OpenAI API", "Ollama"],
   },
   {
-    category: "Web Development",
+    category: "Full-Stack Development",
     icon: Globe,
-    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "MySQL"],
+    technologies: ["React.js", "JavaScript", "Node.js", "Express.js", "REST APIs", "Responsive UI"],
   },
   {
-    category: "Specialized",
-    icon: Smartphone,
-    technologies: ["Unity", "ARCore", "Data Science", "Revit", "DBMS"],
-  },
-  {
-    category: "Tools & Platforms",
+    category: "Data & Backend",
     icon: Database,
-    technologies: ["Git", "Microsoft Azure", "MERN Stack", "AR Development"],
+    technologies: ["PostgreSQL", "MySQL", "MongoDB", "FastAPI", "Pydantic", "Stored Procedures"],
+  },
+  {
+    category: "ML & Developer Tools",
+    icon: Code,
+    technologies: ["PyTorch", "scikit-learn", "XGBoost", "ChromaDB", "Git", "SonarQube"],
   },
 ]
 
@@ -39,9 +39,9 @@ const interests = [
     description: "Active in student organizations and hackathons, leading teams to achieve impactful results",
   },
   {
-    icon: Smartphone,
-    title: "Emerging Technologies",
-    description: "Focused on AR/VR development, data science, and Industry 4.0 applications",
+    icon: Brain,
+    title: "Applied AI Engineering",
+    description: "Focused on RAG, model fine-tuning, evaluation, and building dependable LLM-powered workflows",
   },
 ]
 
@@ -58,9 +58,10 @@ export default function About() {
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">About Me</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            I'm a motivated BTech Information Technology student with a strong foundation in full-stack web development,
-            data science, and problem-solving. I have proven experience in building responsive web applications using
-            modern technologies and delivering impactful solutions through internships and hackathons.
+            I'm an AI Developer and full-stack engineer focused on turning applied Generative AI research into useful products.
+            I build RAG systems, experiment with fine-tuned language models, and ship reliable React, Node.js, and
+            PostgreSQL applications. My production experience includes modernising government digital services used by
+            thousands of citizens and departmental officers.
           </p>
         </motion.div>
 

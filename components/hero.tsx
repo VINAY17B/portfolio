@@ -74,13 +74,13 @@ export default function Hero() {
             >
               <TypeAnimation
                 sequence={[
-                  "Full-Stack Developer",
+                  "AI Developer",
                   2000,
-                  "BTech IT Student",
+                  "Full-Stack Engineer",
                   2000,
-                  "AR/VR Developer",
+                  "RAG & LLM Builder",
                   2000,
-                  "Data Science Enthusiast",
+                  "Generative AI Enthusiast",
                   2000,
                 ]}
                 wrapper="span"
@@ -95,9 +95,9 @@ export default function Hero() {
               transition={{ delay: 0.5 }}
               className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-2xl"
             >
-              Motivated BTech Information Technology student with strong foundation in full-stack web development, data
-              science, and problem-solving. Experienced in building responsive web applications and delivering impactful
-              solutions.
+              AI Developer with hands-on experience building RAG systems, fine-tuning Llama models with QLoRA, and shipping
+              production full-stack workflows. I combine Python, LangChain-style AI engineering, React.js, Node.js,
+              PostgreSQL, and a strong product mindset to build scalable, production-ready applications.
             </motion.p>
 
             <motion.div
@@ -175,7 +175,7 @@ export default function Hero() {
                 transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, delay: 0.5 }}
                 className="absolute -bottom-4 -left-4 bg-purple-500 text-white p-3 rounded-full shadow-lg"
               >
-                <span className="text-sm font-bold">AR/VR</span>
+                <span className="text-sm font-bold">LLMs</span>
               </motion.div>
             </motion.div>
           </motion.div>
